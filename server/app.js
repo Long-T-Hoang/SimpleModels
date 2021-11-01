@@ -14,7 +14,6 @@ const router = require('./router.js');
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
 const dbURL = process.env.MONGODB_URI || 'mongodb://localhost/SimpleModels';
-//const dbURL = 'mongodb+srv://lth1092:Vrael13071527@cluster0.ywnt7.mongodb.net/SimpleModels?retryWrites=true&w=majority';
 
 mongoose.connect(dbURL, (err) => {
   if (err) {
